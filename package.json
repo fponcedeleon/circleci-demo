@@ -1,0 +1,25 @@
+{
+  "name": "circleci-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "cypress": "^5.1.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "cypress": "node_modules\\.bin\\cypress open",
+    "e2e": "node_modules\\.bin\\cypress run",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fponcedeleon/circleci-demo.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fponcedeleon/circleci-demo/issues"
+  },
+  "homepage": "https://github.com/fponcedeleon/circleci-demo#readme"
+}
