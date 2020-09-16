@@ -13,8 +13,8 @@ workflows:
   version: 2.1
   test_and_static:
     jobs:
-      - install-cypress
-      - run-cypress:
-        requires: 
-          - install-cypress
+        - install-cypress
+        - run-cypress:
+            requires: 
+              - install-cypress
       
