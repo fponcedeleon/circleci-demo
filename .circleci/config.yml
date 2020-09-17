@@ -14,8 +14,10 @@ jobs:
           name: Install Java
           command: |
             npm install
-            CYPRESS_CACHE_FOLDER=./tmp/Cypress npm install
-            CYPRESS_CACHE_FOLDER=./tmp/Cypress npm run cy:open:dev
+            export CYPRESS_CACHE_FOLDER=cache/Cypress
+            npm i cypress
+            npx cypress run
+            npm run cy:open:dev
   pmd:
     executor: sfdx/default
     steps:
