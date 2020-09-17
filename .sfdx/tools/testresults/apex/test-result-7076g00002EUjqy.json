@@ -1,0 +1,148 @@
+{
+    "summary": {
+        "outcome": "Passed",
+        "testsRan": 1,
+        "passing": 1,
+        "failing": 0,
+        "skipped": 0,
+        "passRate": "100%",
+        "failRate": "0%",
+        "testStartTime": "Sep 16, 2020 9:03 PM",
+        "testExecutionTime": "173 ms",
+        "testTotalTime": "173 ms",
+        "commandTime": "64333 ms",
+        "hostname": "https://nima-fede-dev-ed.my.salesforce.com",
+        "orgId": "00D6g000004XjYnEAK",
+        "username": "federico.poncedeleon@nimacloud.com.flows",
+        "testRunId": "7076g00002EUjqy",
+        "userId": "0056g000003EWS9AAO",
+        "testRunCoverage": "100%",
+        "orgWideCoverage": "1%"
+    },
+    "tests": [
+        {
+            "attributes": {
+                "type": "ApexTestResult",
+                "url": "/services/data/v49.0/tooling/sobjects/ApexTestResult/07M6g000006s0NKEAY"
+            },
+            "Id": "07M6g000006s0NKEAY",
+            "QueueItemId": "7096g000000bBQ1AAM",
+            "StackTrace": null,
+            "Message": null,
+            "AsyncApexJobId": "7076g00002EUjqyAAD",
+            "MethodName": "itShouldReturnAllRecords",
+            "Outcome": "Pass",
+            "ApexClass": {
+                "attributes": {
+                    "type": "ApexClass",
+                    "url": "/services/data/v49.0/tooling/sobjects/ApexClass/01p6g00000RyeQPAAZ"
+                },
+                "Id": "01p6g00000RyeQPAAZ",
+                "Name": "DemoClassTest",
+                "NamespacePrefix": null
+            },
+            "RunTime": 173,
+            "FullName": "DemoClassTest.itShouldReturnAllRecords"
+        }
+    ],
+    "coverage": {
+        "coverage": [
+            {
+                "id": "01p6g00000R21s3AAB",
+                "name": "VotationController",
+                "totalLines": 2,
+                "lines": {
+                    "4": 1,
+                    "5": 1
+                },
+                "totalCovered": 2,
+                "coveredPercent": 100
+            },
+            {
+                "id": "01p6g00000RyeQLAAZ",
+                "name": "DemoClass",
+                "totalLines": 3,
+                "lines": {
+                    "2": 1,
+                    "3": 1,
+                    "4": 1
+                },
+                "totalCovered": 3,
+                "coveredPercent": 100
+            }
+        ],
+        "records": [
+            {
+                "attributes": {
+                    "type": "ApexCodeCoverage",
+                    "url": "/services/data/v49.0/tooling/sobjects/ApexCodeCoverage/7146g000003PeqNAAS"
+                },
+                "ApexTestClass": {
+                    "attributes": {
+                        "type": "ApexClass",
+                        "url": "/services/data/v49.0/tooling/sobjects/ApexClass/01p6g00000R24CmAAJ"
+                    },
+                    "Id": "01p6g00000R24CmAAJ",
+                    "Name": "VotationControllerTest"
+                },
+                "Coverage": {
+                    "coveredLines": [
+                        4,
+                        5
+                    ],
+                    "uncoveredLines": []
+                },
+                "TestMethodName": "given_listOfVotationIds_Then_ReturnsAllRecords",
+                "NumLinesCovered": 2,
+                "ApexClassOrTrigger": {
+                    "attributes": {
+                        "type": "Name",
+                        "url": "/services/data/v49.0/tooling/sobjects/ApexClass/01p6g00000R21s3AAB"
+                    },
+                    "Id": "01p6g00000R21s3AAB",
+                    "Name": "VotationController"
+                },
+                "NumLinesUncovered": 0
+            },
+            {
+                "attributes": {
+                    "type": "ApexCodeCoverage",
+                    "url": "/services/data/v49.0/tooling/sobjects/ApexCodeCoverage/7146g000006lqvcAAA"
+                },
+                "ApexTestClass": {
+                    "attributes": {
+                        "type": "ApexClass",
+                        "url": "/services/data/v49.0/tooling/sobjects/ApexClass/01p6g00000RyeQPAAZ"
+                    },
+                    "Id": "01p6g00000RyeQPAAZ",
+                    "Name": "DemoClassTest"
+                },
+                "Coverage": {
+                    "coveredLines": [
+                        2,
+                        3,
+                        4
+                    ],
+                    "uncoveredLines": []
+                },
+                "TestMethodName": "itShouldReturnAllRecords",
+                "NumLinesCovered": 3,
+                "ApexClassOrTrigger": {
+                    "attributes": {
+                        "type": "Name",
+                        "url": "/services/data/v49.0/tooling/sobjects/ApexClass/01p6g00000RyeQLAAZ"
+                    },
+                    "Id": "01p6g00000RyeQLAAZ",
+                    "Name": "DemoClass"
+                },
+                "NumLinesUncovered": 0
+            }
+        ],
+        "summary": {
+            "totalLines": 5,
+            "coveredLines": 5,
+            "testRunCoverage": "100%",
+            "orgWideCoverage": "1%"
+        }
+    }
+}

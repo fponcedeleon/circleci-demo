@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+    <testsuite name="force.apex" timestamp="2020-09-16T21:03:46-03:00" hostname="https://nima-fede-dev-ed.my.salesforce.com" tests="1" failures="0"  errors="0"  time="0.17">
+        <properties>
+            <property name="outcome" value="Passed"/>
+            <property name="testsRan" value="1"/>
+            <property name="passing" value="1"/>
+            <property name="failing" value="0"/>
+            <property name="skipped" value="0"/>
+            <property name="passRate" value="100%"/>
+            <property name="failRate" value="0%"/>
+            <property name="testStartTime" value="Sep 16, 2020 9:03 PM"/>
+            <property name="testExecutionTime" value="0.17 s"/>
+            <property name="testTotalTime" value="0.17 s"/>
+            <property name="commandTime" value="64.33 s"/>
+            <property name="hostname" value="https://nima-fede-dev-ed.my.salesforce.com"/>
+            <property name="orgId" value="00D6g000004XjYnEAK"/>
+            <property name="username" value="federico.poncedeleon@nimacloud.com.flows"/>
+            <property name="testRunId" value="7076g00002EUjqy"/>
+            <property name="userId" value="0056g000003EWS9AAO"/>
+            <property name="testRunCoverage" value="100%"/>
+            <property name="orgWideCoverage" value="1%"/>
+        </properties>
+        <testcase name="itShouldReturnAllRecords" classname="DemoClassTest" time="0.17">
+        </testcase>
+    </testsuite>
+</testsuites>

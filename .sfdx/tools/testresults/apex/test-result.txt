@@ -1,0 +1,42 @@
+=== Test Reports
+FORMAT  FILE
+──────  ────────────────────────────────────────────────────────────────────────────────────────────────────
+txt     /Users/fpondedeleon/circleci-demo/.sfdx/tools/testresults/apex/test-result.txt
+txt     /Users/fpondedeleon/circleci-demo/.sfdx/tools/testresults/apex/test-run-id.txt
+junit   /Users/fpondedeleon/circleci-demo/.sfdx/tools/testresults/apex/test-result-7076g00002EUjqy-junit.xml
+json    /Users/fpondedeleon/circleci-demo/.sfdx/tools/testresults/apex/test-result-7076g00002EUjqy.json
+json    /Users/fpondedeleon/circleci-demo/.sfdx/tools/testresults/apex/test-result-codecoverage.json
+
+=== Apex Code Coverage
+ID                  NAME                % COVERED  UNCOVERED LINES
+──────────────────  ──────────────────  ─────────  ───────────────
+01p6g00000R21s3AAB  VotationController  100%
+01p6g00000RyeQLAAZ  DemoClass           100%
+
+=== Test Results
+TEST NAME                               OUTCOME  MESSAGE  RUNTIME (MS)
+──────────────────────────────────────  ───────  ───────  ────────────
+DemoClassTest.itShouldReturnAllRecords  Pass              173
+
+=== Test Summary
+NAME                 VALUE
+───────────────────  ───────────────────────────────────────────
+Outcome              Passed
+Tests Ran            1
+Passing              1
+Failing              0
+Skipped              0
+Pass Rate            100%
+Fail Rate            0%
+Test Start Time      Sep 16, 2020 9:03 PM
+Test Execution Time  173 ms
+Test Total Time      173 ms
+Command Time         64333 ms
+Hostname             https://nima-fede-dev-ed.my.salesforce.com
+Org Id               00D6g000004XjYnEAK
+Username             federico.poncedeleon@nimacloud.com.flows
+Test Run Id          7076g00002EUjqy
+User Id              0056g000003EWS9AAO
+Test Run Coverage    100%
+Org Wide Coverage    1%
+

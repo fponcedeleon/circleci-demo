@@ -1,0 +1,25 @@
+[
+    {
+        "id": "01p6g00000R21s3AAB",
+        "name": "VotationController",
+        "totalLines": 2,
+        "lines": {
+            "4": 1,
+            "5": 1
+        },
+        "totalCovered": 2,
+        "coveredPercent": 100
+    },
+    {
+        "id": "01p6g00000RyeQLAAZ",
+        "name": "DemoClass",
+        "totalLines": 3,
+        "lines": {
+            "2": 1,
+            "3": 1,
+            "4": 1
+        },
+        "totalCovered": 3,
+        "coveredPercent": 100
+    }
+]
