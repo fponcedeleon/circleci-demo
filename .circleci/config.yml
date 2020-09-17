@@ -15,7 +15,7 @@ jobs:
           command: |
             npm install
             CYPRESS_CACHE_FOLDER=./tmp/Cypress npm install
-            CYPRESS_CACHE_FOLDER=./tmp/Cypress npm cy:open:dev
+            CYPRESS_CACHE_FOLDER=./tmp/Cypress npm run cy:open:dev
   pmd:
     executor: sfdx/default
     steps:
