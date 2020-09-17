@@ -37,14 +37,6 @@ jobs:
             echo $URL > url.txt
             sfdx force:auth:sfdxurl:store -f url.txt -s -a demo.prod
             sfdx force:source:deploy -c -x manifest/package.xml -u demo.prod -l RunLocalTests --ignorewarnings
-  cypressrun:
-    executor: cypress-io/cypress@1
-    steps:
-      - run:
-        name: CypressTest
-        command: |
-          npm install
-          npm run cy:open:dev
   build-prod:
     # This wil deploy code base to production
     executor: sfdx/default
@@ -70,4 +62,4 @@ workflows:
       # - install-java
       # - pmd
       - build-dev
-      - cypressrun
+      - cypress/run
