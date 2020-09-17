@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ruleset xmlns="http://pmd.sourceforge.net/ruleset/2.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="Default ruleset used by the CodeClimate Engine for Salesforce.com Apex" xsi:schemaLocation="http://pmd.sourceforge.net/ruleset/2.0.0 https://pmd.sourceforge.io/ruleset_2_0_0.xsd">
+    <description>Nimacloud PMD ruleset</description>
+    <!-- https://pmd.github.io/latest/pmd_rules_apex.html -->
+
+    <!-- Best Practices-->
+    <rule ref="category/apex/bestpractices.xml/ApexAssertionsShouldIncludeMessage" />
+    <rule ref="category/apex/bestpractices.xml/ApexUnitTestClassShouldHaveAsserts" />
+    <rule ref="category/apex/bestpractices.xml/ApexUnitTestMethodShouldHaveIsTestAnnotation" />
+    <rule ref="category/apex/bestpractices.xml/ApexUnitTestShouldNotUseSeeAllDataTrue" />
+    <rule ref="category/apex/bestpractices.xml/AvoidLogicInTrigger" />
+
+    <!-- Code Style -->
+    <rule ref="category/apex/codestyle.xml/ClassNamingConventions" />
+    <rule ref="category/apex/codestyle.xml/FieldNamingConventions" />
+    <rule ref="category/apex/codestyle.xml/ForLoopsMustUseBraces" />
+    <rule ref="category/apex/codestyle.xml/FormalParameterNamingConventions" />
+    <rule ref="category/apex/codestyle.xml/IfElseStmtsMustUseBraces" />
+    <rule ref="category/apex/codestyle.xml/IfStmtsMustUseBraces" />
+    <rule ref="category/apex/codestyle.xml/LocalVariableNamingConventions" />
+    <rule ref="category/apex/codestyle.xml/MethodNamingConventions" />
+    <rule ref="category/apex/codestyle.xml/OneDeclarationPerLine" />
+    <rule ref="category/apex/codestyle.xml/PropertyNamingConventions" />
+    <rule ref="category/apex/codestyle.xml/WhileLoopsMustUseBraces" />
+
+    <!-- Design -->
+
+    <!-- Documentation -->
+
+    <!-- Error Prone -->
+
+    <!-- Performance -->
+
+    <!-- Security-->
+
+</ruleset>
