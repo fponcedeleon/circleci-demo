@@ -16,7 +16,7 @@ jobs:
             curl -s "https://get.sdkman.io" | bash
             source "$HOME/.sdkman/bin/sdkman-init.sh"
             sdk install java
-            apt-get install default-jdk
+            apt install default-jdk
   pmd:
     executor: sfdx/default
     steps:
