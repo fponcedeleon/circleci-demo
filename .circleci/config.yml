@@ -58,12 +58,12 @@ workflows:
       - cypress/run:
           start: 'npm run cy:open:dev'
       - build-dev
-        filters:
-          branches:
-            only:
-              - /feature\/.*/
+          filters:
+              branches:
+                  only:
+                      - /feature\/.*/
       - build-prod:
-        filters:
-          branches:
-            only:
-              - master
+          filters:
+              branches:
+                  only:
+                      - master
