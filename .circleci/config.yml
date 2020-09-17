@@ -63,7 +63,9 @@ workflows:
             only:
               - /feature\/.*/
       - build-prod:
-        filters:
-          branches:
-            only:
-              - master
+          # requires:
+          #   - pmd
+          filters:
+            branches:
+              only:
+                - master
