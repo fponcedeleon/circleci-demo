@@ -5,15 +5,6 @@ orbs:
   slack: circleci/slack@3.4.2
   cypress: cypress-io/cypress@1
 jobs:
-  install-npm:
-    # This job installs Java to be used in pmd
-    executor: sfdx/default
-    steps:
-      - checkout
-      - run:
-          name: Install NPM
-          command: |
-            npm install
   install-java:
     # This job installs Java to be used in pmd
     executor: sfdx/default
@@ -34,15 +25,6 @@ jobs:
           command: |
             curl -L "https://github.com/pmd/pmd/releases/download/pmd_releases/6.27.0/pmd-bin-6.27.0.zip" -o $pmd-bin-6.27.0.zip; unzip $pmd-bin-6.27.0.zip; rm $pmd-bin-6.27.0.zip;
             $pmd-bin-6.27.0/bin/run.sh pmd -no-cache -d . -R deploy/ruleset.xml -f text -l apex
-  pmd:
-    executor: sfdx/default
-    steps:
-      - checkout
-      - run:
-          name: Run PMD
-          command: |
-            curl -L "https://github.com/pmd/pmd/releases/download/pmd_releases/$PMD_VER/$PMD_BIN.zip" -o $PMD_BIN.zip; unzip $PMD_BIN.zip; rm $PMD_BIN.zip;
-            $PMD_BIN/bin/run.sh pmd -no-cache -d . -R deploy/ruleset.xml -f text -l apex
   build-dev:
     # This will validate code base to partial
     executor: sfdx/default
@@ -85,3 +67,7 @@ workflows:
           start: 'npm run cy:open:dev'
           # requires:
           #     - cypress/install
+      - install-java
+      - pmd:
+          requires:
+              - install-java
