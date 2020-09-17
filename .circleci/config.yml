@@ -62,4 +62,6 @@ workflows:
       # - install-java
       # - pmd
       - build-dev
-      - cypress/run
+      - cypress/run:
+        requires:
+          - cypress/install
