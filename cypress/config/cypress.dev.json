@@ -1,0 +1,14 @@
+{
+    "baseUrl": "https://demo-circleci-dev-ed.lightning.force.com",
+    "env": {
+        "salesforce": {
+            "requestTimeout": 80000,
+            "loginUrl": "https://login.salesforce.com",
+            "username": "federico.poncedeleon@nimacloud.com.production",
+            "password": "nimacloud030619",
+            "accessToken": "00D4W000004As81!AQ4AQGR9pZCmFhaUYYqU08GIu_fzrtwI0ycVx2sB93gb3MLgee.rF6TFRNqaOWey59D4yZl5u4RpQloUc9_AnKZLQWlvA1NR"
+       }
+    },
+    "requestTimeout": 80000,
+    "responseTimeout": 80000
+}
