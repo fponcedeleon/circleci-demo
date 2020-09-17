@@ -1,13 +1,15 @@
 <template>
-    <lightning-record-edit-form object-api-name="Demo__c" onsuccess={handleSuccess}>
-        <lightning-messages></lightning-messages>
-        <div class="slds-m-around_medium">
-            <lightning-input-field field-name='Name__c'></lightning-input-field>
-            <lightning-input-field field-name='Email__c'></lightning-input-field>
-            <div class="slds-m-top_medium">
-                <lightning-button variant="brand" type="submit" name="save" label="Create">
-                </lightning-button>
+    <div class="slds-box slds-box_x-small" style="background-color: whitesmoke;">
+        <lightning-record-edit-form object-api-name="Demo__c" onsuccess={handleSuccess}>
+            <lightning-messages></lightning-messages>
+            <div class="slds-m-around_medium">
+                <lightning-input-field field-name='Name__c'></lightning-input-field>
+                <lightning-input-field field-name='Email__c'></lightning-input-field>
+                <div class="slds-m-top_medium">
+                    <lightning-button variant="brand" type="submit" name="save" label="Create">
+                    </lightning-button>
+               </div>
            </div>
-       </div>
-    </lightning-record-edit-form>
+        </lightning-record-edit-form>
+    </div>
 </template>
