@@ -3,12 +3,20 @@
    
     <types>
         <members>*</members>
+        <name>ApexClass</name>
+    </types>
+    <types>
+        <members>*</members>
         <name>CustomObject</name>
     </types>
     <types>
         <members>*</members>
         <name>Layout</name>
     </types>
+    <types>
+		<members>*</members>
+		<name>LightningComponentBundle</name>
+	</types>
     
     <version>49.0</version>
 </Package>
