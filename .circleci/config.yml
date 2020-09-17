@@ -64,4 +64,3 @@ workflows:
       - cypress/run:
         requires:
           - cypress/install
-        install-command: 'npm install --no-optional --unsafe-perm'
