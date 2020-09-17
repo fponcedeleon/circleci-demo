@@ -36,7 +36,7 @@ jobs:
           command: |
             echo $URL > url.txt
             sfdx force:auth:sfdxurl:store -f url.txt -s -a demo.prod
-            sfdx force:source:deploy -c -x manifest/package.xml -u demo.prod -l RunLocalTests --ignorewarnings
+            sfdx force:source:deploy -x manifest/package.xml -u demo.prod -l RunLocalTests --ignorewarnings
   build-prod:
     # This wil deploy code base to production
     executor: sfdx/default
@@ -49,25 +49,21 @@ jobs:
             echo $URL > url.txt
             sfdx force:auth:sfdxurl:store -f url.txt -s -a demo.prod
             sfdx force:source:deploy -c -x manifest/package.xml -u demo.prod -l RunLocalTests --ignorewarnings
-  notify-slack:
-    executor: orb-tools/ubuntu
-    steps:
-      - run: exit 0
-      - slack/status:
-          fail_only: false
 workflows:
   version: 2.1
   test_and_static:
     jobs:
       # - install-npm
       # - pmd
-      - build-dev
-      # - cypress/install
-      - cypress/run:
+       - cypress/run:
           start: 'npm run cy:open:dev'
-          # requires:
-          #     - cypress/install
-      # - install-java
-      # - pmd:
-      #     requires:
-      #         - install-java
+      - build-dev
+        filters:
+          branches:
+            only:
+              - /feature\/.*/
+      - build-prod:
+        filters:
+          branches:
+            only:
+              - master
