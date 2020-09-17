@@ -16,6 +16,7 @@ jobs:
             curl -s "https://get.sdkman.io" | bash
             source "$HOME/.sdkman/bin/sdkman-init.sh"
             sdk install java
+            npm install
   pmd:
     executor: sfdx/default
     steps:
@@ -62,8 +63,6 @@ workflows:
       # - install-java
       # - pmd
       - build-dev
-      - cypress/install:
-          build: 'npm install'
       - cypress/run:
         requires:
-          - cypress/install
+          - install-java
