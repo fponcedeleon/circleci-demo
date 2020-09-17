@@ -61,6 +61,4 @@ workflows:
       # - pmd
       - build-dev
       - cypress/run:
-        command: npm run cy:run:dev
-        requires:
-            - install-npm
+        - command: npm run cy:open:dev
