@@ -153,6 +153,7 @@
     <enableSharing>true</enableSharing>
     <enableStreamingApi>true</enableStreamingApi>
     <externalSharingModel>Private</externalSharingModel>
+    <gender>Masculine</gender>
     <label>Demo</label>
     <nameField>
         <displayFormat>Demo-{0000}</displayFormat>
