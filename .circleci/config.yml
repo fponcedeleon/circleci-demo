@@ -60,5 +60,8 @@ workflows:
       - install-npm
       # - pmd
       - build-dev
+      - cypress/install
       - cypress/run:
-        - command: npm run cy:open:dev
+        requires:
+          - cypress/install
+        install-command: 'npm install --no-optional --unsafe-perm'
