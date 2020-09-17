@@ -61,4 +61,6 @@ workflows:
       # - pmd
       - build-dev
       - cypress/install
-      - cypress/run
+      - cypress/run:
+        requires:
+          - cypress/install
