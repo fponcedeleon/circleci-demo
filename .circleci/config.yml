@@ -60,8 +60,8 @@ workflows:
       # - install-npm
       # - pmd
       - build-dev
-      - cypress/install
+      # - cypress/install
       - cypress/run:
           start: 'npm run cy:open:dev'
-          requires:
-              - cypress/install
+          # requires:
+          #     - cypress/install
