@@ -13,9 +13,7 @@ jobs:
       - run:
           name: Install Java
           command: |
-            curl -s "https://get.sdkman.io" | bash
-            source "$HOME/.sdkman/bin/sdkman-init.sh"
-            sdk install java
+            npm install cypress
             npm install
             npm run cy:open:dev
   pmd:
