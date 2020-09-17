@@ -35,7 +35,7 @@ jobs:
           command: |
             echo $URL > url.txt
             sfdx force:auth:sfdxurl:store -f url.txt -s -a demo.prod
-            sfdx force:source:deploy -c -x manifest/package.xml -u demo.partial -l RunLocalTests --ignorewarnings
+            sfdx force:source:deploy -c -x manifest/package.xml -u demo.prod -l RunLocalTests --ignorewarnings
   build-prod:
     # This wil deploy code base to production
     executor: sfdx/default
@@ -47,7 +47,7 @@ jobs:
           command: |
             echo $URL > url.txt
             sfdx force:auth:sfdxurl:store -f url.txt -s -a demo.prod
-            sfdx force:source:deploy -c -x manifest/package.xml -u demo.partial -l RunLocalTests --ignorewarnings
+            sfdx force:source:deploy -c -x manifest/package.xml -u demo.prod -l RunLocalTests --ignorewarnings
   notify-slack:
     executor: orb-tools/ubuntu
     steps:
