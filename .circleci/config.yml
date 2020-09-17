@@ -57,10 +57,10 @@ workflows:
   version: 2.1
   test_and_static:
     jobs:
-      - install-npm
+      # - install-npm
       # - pmd
       - build-dev
-      - cypress/install
+      # - cypress/install
       - cypress/run:
           start: 'npm run cy:open:dev'
           requires:
