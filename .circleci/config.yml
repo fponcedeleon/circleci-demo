@@ -4,7 +4,6 @@ orbs:
   sfdx: circleci/salesforce-sfdx@2.0
   slack: circleci/slack@3.4.2
   cypress: cypress-io/cypress@1
-  openjdk-install: cloudesire/openjdk-install
 jobs:
   install-java:
     # This job installs Java to be used in pmd
