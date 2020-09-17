@@ -5,21 +5,15 @@ orbs:
   slack: circleci/slack@3.4.2
   cypress: cypress-io/cypress@1
 jobs:
-  install-java:
+  install-npm:
     # This job installs Java to be used in pmd
     executor: sfdx/default
     steps:
       - checkout
       - run:
-          name: Install Java
+          name: Install NPM
           command: |
-            apt -y install libgconf2-4
-            apt-get install libgtk2.0-0 libgtk-3-0 libgbm-dev libnotify-dev libgconf-2-4 libnss3 libxss1 libasound2 libxtst6 xauth xvfb
             npm install
-            export CYPRESS_CACHE_FOLDER=cache/Cypress
-            npm i cypress
-            npx cypress run
-            npm run cy:open:dev
   pmd:
     executor: sfdx/default
     steps:
@@ -63,6 +57,10 @@ workflows:
   version: 2.1
   test_and_static:
     jobs:
-      - install-java
+      - install-npm
       # - pmd
       - build-dev
+      - cypress/run:
+        command: npm run cy:run:dev
+        requires:
+            - install-npm
