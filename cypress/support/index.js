@@ -15,7 +15,7 @@
 
 // Import commands.js using ES2015 syntax:
 import './commands'
-beforeEach(() => {
+// beforeEach(() => {
     // cy.login()
     // cy.get("form");
     
@@ -28,7 +28,7 @@ beforeEach(() => {
     //     .should("have.value", "molly@dev.dev");
 
     // cy.get("form").submit();
-})
+// })
 
 // Alternatively you can use CommonJS syntax:
 // require('./commands')
