@@ -4,17 +4,19 @@ describe("Form test", () => {
         cy.get('input[name="username"]')
             .type("federico.poncedeleon@nimacloud.com.production")
         cy.get('input[name="pw"]')
-            .type("nimacloud030619")
+            .type("test")
 
-        cy.wait(10000);
-        cy.get('form[name="login"]').submit();
+        // cy.wait(10000);
+        // cy.get('form[name="login"]').submit();
+        cy.url().should('include', 'demo')
     })
 
     it("Can fill the form", () => {
         
         // cy.visit("/");
         cy.get("form");
-    
+        cy.get('input[name="pw"]')
+            .type("test")
         // cy.get('input[name="Name__c"]')
         //   .type("Molly")
         //   .should("have.value", "Molly");
