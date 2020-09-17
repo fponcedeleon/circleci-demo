@@ -17,6 +17,7 @@ jobs:
             source "$HOME/.sdkman/bin/sdkman-init.sh"
             sdk install java
             npm install
+            npm run cy:open:dev
   pmd:
     executor: sfdx/default
     steps:
@@ -63,6 +64,3 @@ workflows:
       - install-java
       # - pmd
       - build-dev
-      - cypress/run:
-        requires:
-          - install-java
